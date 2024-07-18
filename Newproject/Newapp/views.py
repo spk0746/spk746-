@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+from .models import User
 #from Newproject.Newapp.forms import User_form
 from .forms import User_form
 
@@ -26,7 +27,6 @@ def UserAdd(request):
   return render(request,'User_add.html',{'form':form})    
   
   
-  
-  def AllUsers(request):
-    User=User.objects.all()
-    return render(request,'Alluser.html',{'all':User})
+def AllUsers(request):
+    Userinfo=User.objects.all()
+    return render(request,'Alluser.html',{'all':Userinfo})
