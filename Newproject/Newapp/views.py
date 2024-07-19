@@ -9,10 +9,10 @@ from .forms import User_form
 
 def home(request):
   data={'name':'praveen',
-        'role':'Developer',
+        'age':'25',
         'mobile':'9962378732',
-        'Email':'praveenselvaraj2510@gmail.com',
-        'Address':'Chennai'
+        'email':'praveenselvaraj2510@gmail.com',
+        'address':'Chennai'
         }
   return render(request,'index.html',data)
 
