@@ -1,6 +1,12 @@
 {% extends 'Base.html' %}
 {% block content %}
-<h1>User Add</h1>
+{% block title %}
+UserAdd | Shop cart
+{% endblock title %}
+<div class="container">
+  <h1>User Add</h1>
+</div>
+
 <form action=" "  method="POST">
     {% csrf_token %}
     {{form}}

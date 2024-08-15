@@ -16,6 +16,9 @@ def home(request):
         }
   return render(request,'index.html',data)
 
+def Register(request):
+  return render(request,'Register.html')
+
 
 def UserAdd(request):
   form=User_form()
